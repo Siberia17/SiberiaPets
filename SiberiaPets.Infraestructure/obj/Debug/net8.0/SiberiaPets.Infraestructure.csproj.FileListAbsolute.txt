@@ -1,0 +1,16 @@
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\bin\Debug\net8.0\SiberiaPets.Infraestructure.deps.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\bin\Debug\net8.0\SiberiaPets.Infraestructure.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\bin\Debug\net8.0\SiberiaPets.Infraestructure.pdb
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\bin\Debug\net8.0\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\bin\Debug\net8.0\SiberiaPets.Domain.pdb
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.AssemblyInfo.cs
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.sourcelink.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaP.D95B8C06.Up2Date
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\refint\SiberiaPets.Infraestructure.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\SiberiaPets.Infraestructure.pdb
+C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Infraestructure\obj\Debug\net8.0\ref\SiberiaPets.Infraestructure.dll
