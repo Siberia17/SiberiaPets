@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4uoXt+8ipGc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Presentation\\SiberiaPets.Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eligi\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.11\\microsoft.dotnet.ilcompiler.8.0.11.nupkg.sha512",
+    "C:\\Users\\eligi\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.11\\microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
+    "C:\\Users\\eligi\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.11\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
