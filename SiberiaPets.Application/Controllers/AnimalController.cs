@@ -2,7 +2,7 @@
 using SiberiaPets.Domain.Models;
 using SiberiaPets.Services;
 
-namespace SiberiaPets.Controllers
+namespace SiberiaPets.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
