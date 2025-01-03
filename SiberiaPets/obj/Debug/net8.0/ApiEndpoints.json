@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "SiberiaPets.Controllers.AnimalController",
+    "ContainingType": "SiberiaPets.Application.Controllers.AnimalController",
     "Method": "GetAnimals",
     "RelativePath": "api/Animal",
     "HttpMethod": "GET",

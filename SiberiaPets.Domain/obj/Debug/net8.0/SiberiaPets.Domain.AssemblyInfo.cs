@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiberiaPets.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99fa8d5d1d376eba1e8b2000f44d85f309eb4885")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67c093c0f060e8df1928cf2876898f12ac355c56")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiberiaPets.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiberiaPets.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
