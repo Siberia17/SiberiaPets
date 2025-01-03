@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "hgecyd+CIiOKuGg+2UY6OvY16elGG3PDL94eWB4RkX8=",
+  "Hash": "UMwcJPXjfusxLqR0bjR+VRlGL0vuzPWY2R0yvWmWLQc=",
   "Source": "SiberiaPets",
   "BasePath": "_content/SiberiaPets",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj",
+      "Version": 2,
+      "Source": "UsersApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []

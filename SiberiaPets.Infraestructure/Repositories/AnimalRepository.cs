@@ -38,5 +38,86 @@ namespace SiberiaPets.Repositories
                 return animals;
             }
         }
+
+        public async Task<Animal> GetAnimalByIdAsync(int id)
+        {
+            using (var connection = new SqlConnection(_databaseSettings.ConnectionString))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new SqlCommand("SELECT * FROM Animal WHERE IdAnimal = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        if (await reader.ReadAsync())
+                        {
+                            return new Animal
+                            {
+                                IdAnimal = reader.GetInt32(0),
+                                Description = reader.GetString(1)
+                            };
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+        }
+
+        public async Task<Animal> CreateAnimalAsync(Animal animal)
+        {
+            using (var connection = new SqlConnection(_databaseSettings.ConnectionString))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new SqlCommand("INSERT INTO Animal (Description) VALUES (@Description); SELECT SCOPE_IDENTITY()", connection))
+                {
+                    command.Parameters.AddWithValue("@Description", animal.Description);
+
+                    var id = await command.ExecuteScalarAsync();
+
+                    animal.IdAnimal = Convert.ToInt32(id);
+
+                    return animal;
+                }
+            }
+        }
+
+        public async Task UpdateAnimalAsync(Animal animal)
+        {
+            using (var connection = new SqlConnection(_databaseSettings.ConnectionString))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new SqlCommand("UPDATE Animal SET Description = @Description WHERE IdAnimal = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Description", animal.Description);
+                    command.Parameters.AddWithValue("@Id", animal.IdAnimal);
+
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
+
+        public async Task DeleteAnimalAsync(int id)
+        {
+            using (var connection = new SqlConnection(_databaseSettings.ConnectionString))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new SqlCommand("DELETE FROM Animal WHERE IdAnimal = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
+
+
     }
 }

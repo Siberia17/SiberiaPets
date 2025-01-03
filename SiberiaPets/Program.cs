@@ -1,13 +1,27 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using SiberiaPets.Infraestructure.Settings;
 using SiberiaPets.Repositories;
 using SiberiaPets.Services;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 //Agrega la configuración de DatabaseSettings
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer("Bearer", options =>
+{
+    options.Authority = "https://localhost:44305";
+    options.Audience = "SiberiaPets";
+});
 
 //Registra el servicio DatabaseSettings como un singleton
 builder.Services.AddSingleton(provider =>
@@ -43,6 +57,7 @@ app.UseRouting();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
