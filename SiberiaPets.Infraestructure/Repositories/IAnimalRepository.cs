@@ -6,5 +6,11 @@ namespace SiberiaPets.Repositories
     {
         Task<IEnumerable<Animal>> GetAnimalsAsync();
 
+        Task<Animal> GetAnimalByIdAsync(int id);
+
+        Task<Animal> CreateAnimalAsync(Animal animal);
+        Task UpdateAnimalAsync(Animal animal);
+        Task DeleteAnimalAsync(int id);
+
     }
 }
