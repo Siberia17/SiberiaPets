@@ -18,6 +18,7 @@ namespace SiberiaPets.Application.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Animal>>> GetAnimals()
         {
             var animals = await _animalService.GetAnimalsAsync();
