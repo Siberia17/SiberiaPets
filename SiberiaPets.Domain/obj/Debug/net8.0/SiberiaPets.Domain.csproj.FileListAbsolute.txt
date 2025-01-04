@@ -10,3 +10,15 @@ C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Domain\ob
 C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\refint\SiberiaPets.Domain.dll
 C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.pdb
 C:\Users\eligi\Desktop\Siberia Gonzalez\examen\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\ref\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\bin\Debug\net8.0\SiberiaPets.Domain.deps.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\bin\Debug\net8.0\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\bin\Debug\net8.0\SiberiaPets.Domain.pdb
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.AssemblyInfoInputs.cache
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.AssemblyInfo.cs
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.csproj.CoreCompileInputs.cache
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.sourcelink.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\refint\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.pdb
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\ref\SiberiaPets.Domain.dll

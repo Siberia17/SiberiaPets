@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj": {}
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj": {
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
+        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
         "projectName": "SiberiaPets.Application",
-        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
+        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
         "packagesPath": "C:\\Users\\eligi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\obj\\",
+        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
               },
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj",
         "projectName": "SiberiaPets.Domain",
-        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj",
+        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj",
         "packagesPath": "C:\\Users\\eligi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\obj\\",
+        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj",
         "projectName": "SiberiaPets.Infraestructure",
-        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj",
+        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\eligi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -175,8 +175,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
               }
             }
           }
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj": {
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
+        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
         "projectName": "SiberiaPets",
-        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
+        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
         "packagesPath": "C:\\Users\\eligi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\obj\\",
+        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -254,17 +254,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj"
               },
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj"
               },
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj"
               },
-              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj": {
-                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj"
+              "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj": {
+                "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj"
               }
             }
           }
@@ -335,14 +335,14 @@
         }
       }
     },
-    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj": {
+    "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj",
+        "projectUniqueName": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj",
         "projectName": "UsersApi",
-        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj",
+        "projectPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj",
         "packagesPath": "C:\\Users\\eligi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\obj\\",
+        "outputPath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

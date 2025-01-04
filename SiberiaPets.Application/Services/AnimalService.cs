@@ -34,9 +34,9 @@ namespace SiberiaPets.Services
             await _animalRepository.DeleteAnimalAsync(id);
         }
 
-        public Task<Animal> UpdateAnimalAsync(Animal animal)
+        public async Task<Animal> UpdateAnimalAsync(Animal animal)
         {
-            throw new NotImplementedException();
+            return await _animalRepository.UpdateAnimalAsync(animal);
         }
     }
 }
