@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/P4UEZYMM0M=",
+  "dgSpecHash": "MHLIjZLXv4c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
+  "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Application\\SiberiaPets.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",

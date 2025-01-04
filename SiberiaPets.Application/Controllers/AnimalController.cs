@@ -38,6 +38,7 @@ namespace SiberiaPets.Application.Controllers
 
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Animal>> CreateAnimal(Animal animal)
         {
             var newanimal = await _animalService.CreateAnimalAsync(animal);

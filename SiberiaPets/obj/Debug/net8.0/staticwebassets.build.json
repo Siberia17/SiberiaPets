@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "UMwcJPXjfusxLqR0bjR+VRlGL0vuzPWY2R0yvWmWLQc=",
+  "Hash": "MHvaX3c9Xljz44PlJ3Ycad9E1hZqamUGQso11BLK2ww=",
   "Source": "SiberiaPets",
   "BasePath": "_content/SiberiaPets",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\UsersApi\\UsersApi\\UsersApi.csproj",
+      "Identity": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\UsersApi\\UsersApi\\UsersApi.csproj",
       "Version": 2,
       "Source": "UsersApi",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

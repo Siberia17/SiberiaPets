@@ -9,7 +9,7 @@ namespace SiberiaPets.Repositories
         Task<Animal> GetAnimalByIdAsync(int id);
 
         Task<Animal> CreateAnimalAsync(Animal animal);
-        Task UpdateAnimalAsync(Animal animal);
+        Task<Animal> UpdateAnimalAsync(Animal animal);
         Task DeleteAnimalAsync(int id);
 
     }

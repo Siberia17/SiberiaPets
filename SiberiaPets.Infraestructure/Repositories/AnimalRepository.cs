@@ -87,7 +87,7 @@ namespace SiberiaPets.Repositories
             }
         }
 
-        public async Task UpdateAnimalAsync(Animal animal)
+        public async Task<Animal> UpdateAnimalAsync(Animal animal)
         {
             using (var connection = new SqlConnection(_databaseSettings.ConnectionString))
             {
@@ -99,6 +99,8 @@ namespace SiberiaPets.Repositories
                     command.Parameters.AddWithValue("@Id", animal.IdAnimal);
 
                     await command.ExecuteNonQueryAsync();
+
+                    return animal;
                 }
             }
         }

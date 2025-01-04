@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/xtsvhCB/3Q=",
+  "dgSpecHash": "x11ltAPYphI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\examen\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
+  "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eligi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
