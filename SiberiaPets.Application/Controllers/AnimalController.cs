@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SiberiaPets.Domain.Models;
-using SiberiaPets.Services;
+using SiberiaPets.Repositories;
 
 namespace SiberiaPets.Application.Controllers
 {
@@ -10,26 +10,26 @@ namespace SiberiaPets.Application.Controllers
     [Route("api/[controller]")]
     public class AnimalController : ControllerBase
     {
-        private readonly IAnimalService _animalService;
+        private readonly IAnimalRepository _animalRepository;
         
-        public AnimalController(IAnimalService animalService)
+        public AnimalController(IAnimalRepository animalRepository)
         {
-            _animalService = animalService;
+            _animalRepository = animalRepository;
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<IEnumerable<Animal>>> GetAnimals()
         {
-            var animals = await _animalService.GetAnimalsAsync();
+            var animals = await _animalRepository.GetAnimalsAsync();
             return Ok(animals);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Animal>> GetAnimal(int id)
+        public async Task<ActionResult<Animal>> GetAnimalById(int id)
         {
-            var animal = await _animalService.GetAnimalByIdAsync(id);
-            if(animal == null)
+            var animal = await _animalRepository.GetAnimalByIdAsync(id);
+            if (animal == null)
             {
                 return NotFound();
             }
@@ -38,37 +38,30 @@ namespace SiberiaPets.Application.Controllers
 
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult<Animal>> CreateAnimal(Animal animal)
         {
-            var newanimal = await _animalService.CreateAnimalAsync(animal);
-           
-            return CreatedAtAction(nameof(GetAnimal), new { idAnimal = newanimal.IdAnimal }, newanimal);
+            var createdAnimal = await _animalRepository.CreateAnimalAsync(animal);
+
+            return CreatedAtAction(nameof(GetAnimalById), new { id = createdAnimal.IdAnimal }, createdAnimal);
         }
 
         [HttpPut("{id}")]
         public async Task<ActionResult<Animal>> UpdateAnimal(int id, Animal animal)
         {
-            if (id != animal.IdAnimal)
-            {
-                return BadRequest();
-            }
-            await _animalService.UpdateAnimalAsync(animal);
-            return NoContent();
+            var updatedAnimal = await _animalRepository.UpdateAnimalAsync(id, animal);
+            return Ok(updatedAnimal);
         }
-
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<Animal>> DeleteAnimal(int id)
         {
-            var animal = await _animalService.GetAnimalByIdAsync(id);
+            var animal = await _animalRepository.GetAnimalByIdAsync(id);
             if (animal == null)
             {
                 return NotFound();
             }
-            await _animalService.DeleteAnimalAsync(id);
+            await _animalRepository.DeleteAnimalAsync(id);
             return NoContent();
         }
-
     }
 }

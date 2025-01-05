@@ -22,3 +22,4 @@ C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\refint\SiberiaPets.Domain.dll
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.pdb
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\ref\SiberiaPets.Domain.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets.Domain\obj\Debug\net8.0\SiberiaPets.Domain.csproj.AssemblyReference.cache

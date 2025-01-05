@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x11ltAPYphI=",
+  "dgSpecHash": "FlZrgvAbevY=",
   "success": true,
   "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets\\SiberiaPets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eligi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\eligi\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.11\\microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",

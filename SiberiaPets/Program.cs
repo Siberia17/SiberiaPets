@@ -52,7 +52,11 @@ builder.Services.AddSingleton(provider =>
 
 //Registra los servicios
 
-builder.Services.AddTransient<IAnimalRepository, AnimalRepository>();
+builder.Services.AddTransient<IAnimalRepository>(provider =>
+{
+    var configuration = provider.GetService<IConfiguration>();
+    return new AnimalRepository(configuration);
+});
 builder.Services.AddTransient<IAnimalService, AnimalService>();
 
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);   
@@ -75,7 +79,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
-
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
