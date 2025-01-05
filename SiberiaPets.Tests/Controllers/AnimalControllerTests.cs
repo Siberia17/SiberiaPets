@@ -1,50 +1,100 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Xunit;
 using Moq;
-using SiberiaPets.Application.Controllers;
-using SiberiaPets.Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 using SiberiaPets.Services;
-using System.Security.Cryptography.X509Certificates;
+using SiberiaPets.Application.Controllers;
+using SiberiaPets.Repositories;
+using SiberiaPets.Domain.Models;
 
-namespace SiberiaPets.Tests.Controllers
+namespace SiberiaPets.Tests
 {
-    [TestClass]
     public class AnimalControllerTests
     {
-        private Mock<IAnimalService> _animalServiceMock;
-        private SiberiaPets.Application.Controllers.AnimalController _controller;
+        private readonly Mock<IAnimalRepository> _mockAnimalRepository;
+        private readonly AnimalController _animalController;
 
         public AnimalControllerTests()
         {
-            _animalServiceMock = new Mock<IAnimalService>();
-            _controller = new AnimalController(_animalServiceMock.Object);
+            _mockAnimalRepository = new Mock<IAnimalRepository>();
+            _animalController = new AnimalController(_mockAnimalRepository.Object);
         }
 
-        [TestMethod]
-        public async Task GetAnimal_ReturnsAnimalAsync()
+        [Fact]
+        public async Task GetAnimalById_ReturnsOkResult_WithAValidId()
         {
-            //configurar el servicio mock
-            var animals = new List<Animal>
-            {
-                new Animal { IdAnimal = 1, Description = "Perro" },
-                new Animal { IdAnimal = 2, Description = "Gato" }
-            };
-            _animalServiceMock.Setup(s => s.GetAnimalsAsync()).ReturnsAsync(animals);
+            // Arrange
+            var animal = new Animal { IdAnimal = 1, Description = "Perro" };
+            _mockAnimalRepository.Setup(s => s.GetAnimalByIdAsync(It.IsAny<int>())).ReturnsAsync(animal);
 
-            //llamar al metodo
-            var result = await _controller.GetAnimals();
+            // Act
+            var result = await _mockAnimalRepository.Object.GetAnimalByIdAsync(1);
 
-            //verificar el resultado
+            // Assert
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(1, result.IdAnimal);
+            Assert.Equal("Perro", result.Description);
+        }
 
-            var okResult = (OkObjectResult)result.Result;
-            var animalList = (IEnumerable<Animal>)okResult.Value;
+        [Fact]
+        public async Task GetAnimalById_ReturnsNotFoundResult_WithAnInvalidId()
+        {
+            // Arrange
+            Animal animal = null;
+            _mockAnimalRepository.Setup(s => s.GetAnimalByIdAsync(It.IsAny<int>())).ReturnsAsync(animal);
 
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(animalList);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(2, animalList.Count());
+            // Act
+            var result = await _mockAnimalRepository.Object.GetAnimalByIdAsync(1);
+
+            // Assert
+            Assert.Null(result);
+        }
+
+        [Fact]
+        public async Task CreateAnimal_ValidData_ReturnsCreatedResult()
+        {
+            // Arrange
+            var animal = new Animal { IdAnimal = 1, Description = "Perro" };
+            _mockAnimalRepository.Setup(s => s.CreateAnimalAsync(It.IsAny<Animal>())).ReturnsAsync(animal);
+
+            // Act
+            var result = await _mockAnimalRepository.Object.CreateAnimalAsync(animal);
+
+            // Assert
+            Assert.NotNull(result);
+        }
+
+        [Fact]
+        public async Task UpdateAnimal_ValidData_ReturnsOkResult()
+        {
+            // Arrange
+            var animal = new Animal { IdAnimal = 1, Description = "Perro" };
+            _mockAnimalRepository.Setup(s => s.UpdateAnimalAsync(animal.IdAnimal, It.IsAny<Animal>())).ReturnsAsync(animal);
+
+            // Act
+            var result = await _mockAnimalRepository.Object.UpdateAnimalAsync(animal.IdAnimal, animal);
+
+            // Assert
+            Assert.NotNull(result);
+        }
+
+        [Fact]
+        public async Task DeleteAnimal_ValidData_ReturnsOkResult()
+        {
+            // Arrange
+            var animal = new Animal { IdAnimal = 1, Description = "Perro" };
 
 
+            _mockAnimalRepository.Setup(r => r.DeleteAnimalAsync(It.IsAny<int>())).Returns(() => Task.FromResult(animal));
 
+            // Act
+            await _mockAnimalRepository.Object.DeleteAnimalAsync(1);
+
+            // Assert
+            var deletedAnimal = await _mockAnimalRepository.Object.GetAnimalByIdAsync(1);
+
+            Assert.Equal(1, deletedAnimal.IdAnimal);
+            Assert.Equal("Perro", deletedAnimal.Description);
         }
 
     }

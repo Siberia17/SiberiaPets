@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TeytPfYxSNI=",
+  "dgSpecHash": "1Nu+A0YJaOE=",
   "success": true,
   "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Domain\\SiberiaPets.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\eligi\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+  ],
   "logs": []
 }

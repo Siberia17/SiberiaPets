@@ -28,15 +28,18 @@ namespace SiberiaPets.Services
             return await _animalRepository.CreateAnimalAsync(animal);
         }
 
-
+        public async Task<Animal> UpdateAnimalAsync(int id, Animal animal)
+        {
+            return await _animalRepository.UpdateAnimalAsync(id, animal);
+        }
         public async Task DeleteAnimalAsync(int id)
         {
             await _animalRepository.DeleteAnimalAsync(id);
         }
 
-        public async Task<Animal> UpdateAnimalAsync(Animal animal)
+        public async Task<object?> DeleteAnimalAsync()
         {
-            return await _animalRepository.UpdateAnimalAsync(animal);
+            throw new NotImplementedException();
         }
     }
 }

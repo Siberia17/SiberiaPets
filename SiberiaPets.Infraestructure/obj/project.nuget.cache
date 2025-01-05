@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QKLbUPEthns=",
+  "dgSpecHash": "Vh3/N+2jYOY=",
   "success": true,
   "projectFilePath": "C:\\Users\\eligi\\Desktop\\Siberia Gonzalez\\SiberiaPets\\SiberiaPets.Infraestructure\\SiberiaPets.Infraestructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\eligi\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.1\\microsoft.extensions.configuration.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.1\\microsoft.extensions.primitives.2.1.1.nupkg.sha512",
     "C:\\Users\\eligi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

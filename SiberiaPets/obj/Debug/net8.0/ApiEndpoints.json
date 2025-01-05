@@ -47,7 +47,7 @@
   },
   {
     "ContainingType": "SiberiaPets.Application.Controllers.AnimalController",
-    "Method": "GetAnimal",
+    "Method": "GetAnimalById",
     "RelativePath": "api/Animal/{id}",
     "HttpMethod": "GET",
     "IsController": true,
