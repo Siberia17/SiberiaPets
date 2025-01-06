@@ -77,5 +77,16 @@ namespace SiberiaPets.Repositories
                 await connection.ExecuteAsync("sp_DeleteAnimal", new { IdAnimal = id });
             }
         }
+
+
+        public async Task<bool> ExistAnimal(string Description)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var exist = await connection.ExecuteScalarAsync<bool>("sp_ExistAnimal", new { Description = Description });
+                return exist;
+            }
+        }
     }
 }
