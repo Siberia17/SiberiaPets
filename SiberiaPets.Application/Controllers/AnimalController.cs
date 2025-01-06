@@ -47,7 +47,7 @@ namespace SiberiaPets.Application.Controllers
                 var animal = await _animalRepository.GetAnimalByIdAsync(id);
                 if (animal == null)
                 {
-                    throw new Exception(ErrorMessages.ErrorRegistryNotFound);
+                    return StatusCode(404, ErrorMessages.ErrorRegistryNotFound);  
                 }
                 return animal;
             }

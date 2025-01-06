@@ -87,3 +87,6 @@ C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\stati
 C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\eligi\Desktop\Siberia Gonzalez\UsersApi\UsersApi\obj\Debug\net8.0\staticwebassets.build.json
