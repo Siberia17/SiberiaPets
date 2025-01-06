@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using SiberiaPets.Domain.Models;
 using SiberiaPets.Repositories;
+using SiberiaPets.Domain.Constants;
+using Microsoft.AspNetCore.Http;
 
 namespace SiberiaPets.Application.Controllers
 {
-    
     [ApiController]
     [Route("api/[controller]")]
     public class AnimalController : ControllerBase
@@ -17,51 +18,106 @@ namespace SiberiaPets.Application.Controllers
             _animalRepository = animalRepository;
         }
 
+        [Authorize]
         [HttpGet]
-        //[Authorize]
         public async Task<ActionResult<IEnumerable<Animal>>> GetAnimals()
         {
-            var animals = await _animalRepository.GetAnimalsAsync();
-            return Ok(animals);
+            if (!HttpContext.User.Identity.IsAuthenticated)
+            {
+                return StatusCode(401, ErrorMessages.ErrorAuthentication);
+            }
+            try
+            {
+                var animals = await _animalRepository.GetAnimalsAsync();
+                return Ok(animals);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ErrorMessages.ErrorAuthentication);
+            }
+           
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Animal>> GetAnimalById(int id)
         {
-            var animal = await _animalRepository.GetAnimalByIdAsync(id);
-            if (animal == null)
+            try
             {
-                return NotFound();
+                var animal = await _animalRepository.GetAnimalByIdAsync(id);
+                if (animal == null)
+                {
+                    throw new Exception(ErrorMessages.ErrorRegistryNotFound);
+                }
+                return animal;
             }
-            return Ok(animal);
+            catch (Exception ex)
+            {
+                return StatusCode(500, ErrorMessages.ErrorAuthentication);
+            }
+           
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Animal>> CreateAnimal(Animal animal)
         {
-            var createdAnimal = await _animalRepository.CreateAnimalAsync(animal);
+            if (await _animalRepository.ExistAnimal(animal.Description))
+            {
+                return Conflict(new { error = ErrorMessages.ErrorRegistryAlreadyExist });
+            }
 
-            return CreatedAtAction(nameof(GetAnimalById), new { id = createdAnimal.IdAnimal }, createdAnimal);
+            try
+            {
+                var createdAnimal = await _animalRepository.CreateAnimalAsync(animal);
+
+                return CreatedAtAction(nameof(GetAnimalById), new { id = createdAnimal.IdAnimal }, createdAnimal);
+            }
+            catch (Exception ex)
+            {
+               
+                    return StatusCode(500, ErrorMessages.ErrorAuthentication);
+              
+            }
+            
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<ActionResult<Animal>> UpdateAnimal(int id, Animal animal)
         {
-            var updatedAnimal = await _animalRepository.UpdateAnimalAsync(id, animal);
-            return Ok(updatedAnimal);
+            
+            try
+            {
+                var updatedAnimal = await _animalRepository.UpdateAnimalAsync(id, animal);
+                return Ok(updatedAnimal);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ErrorMessages.ErrorDatabaseConnection);
+            }
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Animal>> DeleteAnimal(int id)
         {
-            var animal = await _animalRepository.GetAnimalByIdAsync(id);
-            if (animal == null)
+           
+            try
             {
-                return NotFound();
+                var animal = await _animalRepository.GetAnimalByIdAsync(id);
+                if (animal == null)
+                {
+                    return NotFound();
+                }
+                await _animalRepository.DeleteAnimalAsync(id);
+                return NoContent();
             }
-            await _animalRepository.DeleteAnimalAsync(id);
-            return NoContent();
+            catch (Exception ex)
+            {
+                return StatusCode(500, ErrorMessages.ErrorDatabaseConnection);
+            }
         }
     }
 }

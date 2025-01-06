@@ -351,3 +351,10 @@ C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\obj\Debug\net8.0
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\obj\Debug\net8.0\SiberiaPets.genruntimeconfig.cache
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\obj\Debug\net8.0\ref\SiberiaPets.dll
 C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\Dapper.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.Mvc.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.Razor.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.Helpers.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\System.Web.WebPages.dll
+C:\Users\eligi\Desktop\Siberia Gonzalez\SiberiaPets\SiberiaPets\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
